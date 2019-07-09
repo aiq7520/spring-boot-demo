@@ -23,5 +23,5 @@ public class User {
     @Column(length = 20)
     private String password;
     private Date birthday;
-    private Boolean sex;
+    private Character sex;
 }
