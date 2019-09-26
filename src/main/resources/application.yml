@@ -14,20 +14,21 @@ spring:
 
 server:
   port: 8081
-person:
-  name: 张三
-  age: 18
-  birth: 1995/05/12
-  id: 1452588544
-  email: 'djhs@qq.com'
-  pets:
-    - cat
-    - dog
-    - pig
-  map:
-    name: aaaa
-    demo: 12
-    p: [1,2,3,4]
-  dept:
-    name: 开发部
-    code: 111
+
+#person:
+#  name: 张三
+#  age: 18
+#  birth: 1995/05/12
+#  id: 1452588544
+#  email: 'djhs@qq.com'
+#  pets:
+#    - cat
+#    - dog
+#    - pig
+#  map:
+#    name: aaaa
+#    demo: 12
+#    p: [1,2,3,4]
+#  dept:
+#    name: 开发部
+#    code: 111

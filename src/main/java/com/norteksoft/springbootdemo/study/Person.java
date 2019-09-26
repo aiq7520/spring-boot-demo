@@ -21,8 +21,11 @@ import java.util.Map;
  **/
 @Component
 //@PropertySource()可以通过此注解将 person.properties 里面的值注入
-//@ConfigurationProperties(prefix = "person")
-@Validated//可以通过此注解直接赋值
+@ConfigurationProperties(prefix = "person")
+//@Validated//可以通过此注解直接赋值
+
+//通过properties文件注入值
+//@PropertySource("application.properties")
 @Getter
 @Setter
 @NoArgsConstructor

@@ -4,6 +4,7 @@ import com.norteksoft.springbootdemo.entity.User;
 import com.norteksoft.springbootdemo.exception.ResourceNotFoundException;
 import com.norteksoft.springbootdemo.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +20,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Value("${person.dept.name}")
+    private String usename;
 
     @PostMapping()//Post  等同于 create
     public User createVehicle(@RequestBody User user){
